@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>exhibition site</title>
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	
+
+
+		<script type="text/javascript">
+	
+		var countDownDate = new Date("Jan 1, 2019 00:00:00").getTime();
+
+		var x = setInterval(function(){
+
+			var time = new Date().getTime();
+			var timeleft = countDownDate - time;
+
+			var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+			document.getElementById("counter").innerHTML = '<div class="box time">' + days + '</div><div class="box time">' + hours + '</div><div class="box time">' + minutes + '</div><div class="box time">' + seconds + '</div>';
+		},1000);
+	</script>
+</head>
+<body>
+	<div class="sculture3d"></div>
+	<ul>
+		<li><a href="https://chaeyyyyyyy.github.io/site/">About</a></li>
+		<li><a href="https://chaeyyyyyyy.github.io/1217/">Archive</a></li>
+		<li><a href="https://leekyuri.github.io/40_project/">Gallery</a></li>
+		<li><a href="https://leekyuri.github.io/41_project/">FAQ</a></li>
+	</ul>
+	<div class="title">
+		<h1 onclick="location.href='https://github.com/ankh0916/siz2'">Exhibition Archive</h1>
+	</div>
+	
+	<img src="Elements.png" id="elements"/>
+		<h2>Exhibition</h2>
+		<h3>Archive</h3>
+		<h4>Korea 2018</h4>
+		<h5>Visualization</h5>
+<script src="./js/Three.js" type="text/javascript"></script>
+<script src="./js/OBJLoader.js" type="text/javascript"></script>
+<script src="./js/MTLLoader.js" type="text/javascript"></script>
+<script src="./js/test.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	$('h2').on('mousemove',function(e){
+		centerX = $(this).width()/2;
+		var moveX = centerX - e.offsetX;
+		$(this).css({
+			'transform': 'perspective(500px) rotateY('+ moveX/20 + 'deg)'
+		})
+	})
+
+	$('h3').on('mousemove',function(e){
+		centerX = $(this).width()/2;
+		var moveX = centerX - e.offsetX;
+		$(this).css({
+			'transform': 'perspective(500px) rotateY('+ moveX/20 + 'deg)'
+		})
+	})
+
+	$('h4').on('mousemove',function(e){
+		centerX = $(this).width()/2;
+		var moveX = centerX - e.offsetX;
+		$(this).css({
+			'transform': 'perspective(500px) rotateY('+ moveX/20 + 'deg)'
+		})
+})
+	$('h5').on('mousemove',function(e){
+		centerX = $(this).width()/2;
+		var moveX = centerX - e.offsetX;
+		$(this).css({
+			'transform': 'perspective(3000px) rotateX('+ moveX/30 + 'deg)'
+		})	
+	})
+</script>
+<div id="container">
+	<div id="counter"></div>
+	<div class="box ttitle">DAY</div>
+	<div class="box ttitle">HOUR</div>
+	<div class="box ttitle">MINUTE</div>
+	<div class="box ttitle">SECOND</div>
+</div>
+<div id="poster"></div>
+<section data-animate-scroll='{"scaleX": "1.2","scaleY": "1.2", "alpha": "0", "duration": "2"}'>
+	<h1>page1</h1>
+	<div class="boxx">
+		<div class="imgBx"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster1.jpg">
+		</a></div>
+		<div class="content">
+			<h6>《Karel Martens : Still Moving》</h6>
+			<p>‘스틸 무빙 Still Moving’은 정지 사진(still photograph)을 뜻하는 ‘스틸(still)’과 움직이는 사진인 영상을
+뜻하는 ‘무빙(moving)’의 조합이다. 대비되는 두 단어의 조합은 장르와 매체, 이성과 감성의 영역을 넘나드는
+카럴 마르턴스의 작업 세계를 상기시킨다. 산수를 바라보는 나이에도 활발하게 작업을 계속하고 있는 디자인에
+대한 작가의 지칠 줄 모르는 애정과 열정을 뜻하는 중의적 의미 또한 담고 있다. </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"scaleX": "1.5","scaleY": "1.5", "alpha": "0", "duration": "2"}'>
+	<h1>page2</h1>
+	<div class="boxx">
+		<div class="imgBx"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster2.jpg">
+		</a></div>
+		<div class="content">
+			<h6>《나는 코코 카피탄, 오늘을 살아가는 너에게(Coco Capitán: Is It Tomorrow Yet?)》</h6>
+			<p>전시는 성장 과정에서 겪게 되는 여러 감정의 충돌들과 고민을 담은 페인팅과 핸드라이팅 작품부터, 솔직하고 대담한 자기표현 매체로서의 사진 및 설치 작품에 이르기까지 다양한 장르를 아우르는 작가의 예술 세계를 다각도로 조명합니다. 
+오늘에 대한 고민과 오지 않은 미래에 대한 불안 등의 다양한 감정을 담고 있는 코코 카피탄의 작품들은 질풍노도의 사춘기 시절만큼이나 오늘을 살아가기 위해 폭풍 같은 마음 성장통을 겪고 있는 우리 모두에게 공감의 시간을 선사합니다. </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"scaleX": "2","scaleY": "2", "alpha": "0", "duration": "2"}'>
+<h1>page3</h1>
+	<div class="boxx">
+		<div class="imgBx"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster3.jpg">
+		</a></div>
+		<div class="content">
+			<h6>《위대한 낙서展》</h6>
+			<p>우리 인간 역시 감각을 통해서 세상을 인지하며, 일상을 살아간다. 매 순간, 끊임없는 폭격과 같은 감각적 자극과
+뒤섞임이 의식적 혹은 무의식적으로 신체를 통해 부단히 감각된다. 예술가들에게 있어서 '감각된 무언가' 혹은 '감각하는 행위'는
+작품을 위한 풍부한 재료이자 도구가 된다. 감각과 예술의 관계 맺기를 통해 예술가는'감각의 번역자'인 동시에 새로운 '감각의 창조자'가 되는 것이다.(2인 작가 박혜수와 전소정의 자신의 감각적 경험을 번역해 낸 예술적 실험을 선보이는 전시) </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page4</h1>
+	<div class="boxx">
+		<div class="imgBx"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster4.jpg">
+		</a></div>
+		<div class="content">
+			<h6>《아드먼 애니메이션展 : 두번째 외출》</h6>
+			<p>남아프리카에 서식하는 포유류 아드박(Aardvark)[땅돼지과]에서 ‘아드(Aard)’를 따오고, 슈퍼맨(Superman)에서 ‘맨(man)’을 따와서 그들만의 슈퍼 히어로인 ‘아드만(Aardman)’을 주인공으로 하는 애니메이션을 제작했다. 이 작품이 그들의 사업의 시발점이 되었다. 아드만 주인공의 셀 애니메이션을 15파운드에 BBC에 첫 판매를 하였고, 처음으로 그들만의 계좌를 만들게 되었다. ‘아드만 애니메이션(Aardman Animations)’으로 1972년에 애니메이션이라는 이름을 처음으로 공식 등록했다.
+</p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page5</h1>
+	<div class="boxx">
+		<div class="imgBx"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster5.jpg">
+		</a></div>
+		<div class="content">
+			<h6>《강경구 : 먼 그림자》</h6>
+			<p> '먼 그림자'는 우리 삶의 전경(全景)과 후경(後景)일 것이 분명하다. 눈앞의 현실을 전경, 눈 뒤의 현실을 후경이라 해보자. 전경은 생생한 삶의 현실이고, 후경은 그 현실에 맞붙은 현실 너머의 비현실/초현실의 세계일 것이다. 풀어 말하면, 우리 눈앞에 펼쳐진 현실이 전경이라면, 후경은 현실 너머에 있는 현실의 배꼽과 같은 그 무엇이다. 후경은 전경의 그림자와 같아서 보이지 않고 들리지 않으며 만져지지도 않는다. 신체의 감각을 내려놓은 자리에 영혼의 감각을 불 틔워야만 느낄 수 있는 그 무엇이라 할 수 있다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page6</h1>
+	<div class="boxx">
+		<div class="imgBx"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster6.jpg">
+		</a></div>
+		<div class="content">
+			<h6>《거인(去人) : Walking man》</h6>
+			<p> 전시의 제목인 ‘거인(去人)’은 ‘묵묵히 꿈을 향해 걸어가는 사람’의 뜻을 담고 있으며, 전통과 현대, 미래가 조화롭게 공존하는 문화예술 환경인 서울미술관을 착실하고 굳건한 걸음으로 지켜내고자 하는 안병광 회장의 의지가 오롯이 담겨있다
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page7</h1>
+	<div class="boxx2">
+		<div class="imgBx2"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster7.jpg">
+		</a></div>
+		<div class="content2">
+			<h6>《헬로 초록씨!》</h6>
+			<p> 특별전 <헬로 초록씨>는 생태 감수성을 키워주는 전시로, 지구별 자연과 눈을 맞추고, 자연과 내가 하나임을 느끼게 합니다. 올여름 어린이들의 “생태 감수성”이 쑥쑥, “에코 글로벌 리더”가 되어 지속가능한 지구를 만들어요
+
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page8</h1>
+	<div class="boxx2">
+		<div class="imgBx2"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster8.jpg">
+		</a></div>
+		<div class="content2">
+			<h6>《그들이 꿈꾸었던 나라》</h6>
+			<p> 대한민국 정부수립 70년 기념 특별전으로 대한민국 역사가 담긴 모습들과 함께 70년 동안 변화와 발전의 모습을 담았다.</p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page9</h1>
+	<div class="boxx2">
+		<div class="imgBx2"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster9.jpg">
+		</a></div>
+		<div class="content2">
+			<h6>《미디어 아카이브 알레고리,사물들,기억술》</h6>
+			<p> <알레고리, 사물들 ,기억술>은 자료를 작품의 준비단계나 작품의 이해를 돕는 보조물로 보는 것이 아니라, 작품들에서 떨어져 나와 작품과 무관하게 자신의 장소, 의미, 시간을 만들어 나가는 사물들, 말하자면 '작품의 평행우주'를 구성하는 사물들로 보는 프로젝트이다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page10</h1>
+	<div class="boxx2">
+		<div class="imgBx2"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster10.jpg">
+		</a></div>
+		<div class="content2">
+			<h6>《The Seed of New Society / 미래의 씨앗》</h6>
+			<p> 우리는 수소가 단순한 에너지가 아닌 새로운 미래를 위한 씨앗이라고 생각합니다. 깨끗하고 재생가능한 수소 에너지를 통해 보다 맑은 하늘과 깨끗한 물에 가까워지는 것, 무한한 수소 에너지로 움직이는 자동차를 통해 모든 사람들이 더 많은 곳을 평등하게 이용하고 더 새로운 기회에 가까워 지는 것 이것이 우리가 생각하는 미래입니다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page11</h1>
+	<div class="boxx3">
+		<div class="imgBx3"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster11.jpg">
+		</a></div>
+		<div class="content3">
+			<h6>《한국 미술평론의 역사》</h6>
+			<p> 김달진미술자료박물관에서는 개관 10주년 기념 전시로 <한국 미술평론의 역사>展을 준비하였다. 이번 전시는 미술계에 평론가들이 본격적으로 활동하기 시작한 1950년대 말 부터 2000년대 이후 현재까지 '한국 미술 평론의 역사'를 돌아보기 위해 기획되었다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page12</h1>
+	<div class="boxx3">
+		<div class="imgBx3"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster12.jpg">
+		</a></div>
+		<div class="content3">
+			<h6>《장승업 취화선 특별전-조선 최후의 거장展》</h6>
+			<p> 간송미술관이 소유한 조선의 마지막 천재 화가 장승업의 자유로운 인생 속에서 탄생한 작품 60여점을 전시합니다. 영화로 이해하는 오원 장승업 원작 전시, 장승업 취화선 특별전 - 조선 최후의 거장 展을 기대해주세요.
+
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page13</h1>
+	<div class="boxx3">
+		<div class="imgBx3"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster13.jpg">
+		</a></div>
+		<div class="content3">
+			<h6>《앨리스 인 원더랜드》</h6>
+			<p> ‘앨리스 인 원더랜드’는 ‘이상한 나라의 앨리스’를 모티브로 기획 및 제작된 전시로 누구에게나 친숙한 동화 속 원더랜드를 높은 화소와 최신 맵핑(Mapping)기술로 완벽하게 재현했다. 영상을 터치하고 반응하는 기존의 미디어 인터랙티브(Interactive)를 뛰어넘어 사람의 형태와 동작을 인식하는 기술력을 활용해 다양한 신체활동이 가능하게 한다. 이에 따라 관객들은 만지고 뛰어 다니며 원더랜드를 체험할 수 있으며, 앨리스 동화 속 친구들과 함께 미션을 수행하고 문제를 해결하며 전시를 즐길 수 있다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page14</h1>
+	<div class="boxx4">
+		<div class="imgBx4"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster14.jpg">
+		</a></div>
+		<div class="content4">
+			<h6>《은하철도 999,갤럭시 오디세이 : 마츠모토레이지의 오래된 미래》</h6>
+			<p> 8090년대를 살아온 어른이들의 추억의 만화, 우주와 미래에 대한 동경과 꿈을 선물해준 은하철도 999<br>은하철도 999를 통한 '마츠모토 레이지'의 작가관과 국내 10인의 아티스트 작품을 만날 수 있는 전시회 티켓을 펀샵의 컬처프로젝트를 통해 소개합니다.
+
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page15</h1>
+	<div class="boxx4">
+		<div class="imgBx4"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster15.png">
+		</a></div>
+		<div class="content4">
+			<h6>《날씨의 맛》</h6>
+			<p> 일상 속의 날씨를 음미하고 날씨와 맺어온 역사와 미래에 대해 숙고하는 기회를 마련하고자 기획되었다. 전시명은 알랭 코르뱅의 「날씨의 맛: 비, 햇빛, 바람, 눈, 안개, 뇌우를 느끼는 감수성의 역사 (La pluie, le soleil et le vent. Une histoire de la sensibilité au temps qu’il fait)」라는 도서명을 인용했다. 이 책의 흥미로운 점은 원제에서는 쓰이지 않은 바로 '맛'이라는 표현이다. ‘맛’은 감수성, 감각, 기억, 생각 등을 함의한다. 시시각각 변하는 날씨에 대해서 개개인은 미묘하게 다르게 받아들이고 기억하기도 하는 한편, 공통적으로 무엇인가를 느끼고 생각하기도 한다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page16</h1>
+	<div class="boxx4">
+		<div class="imgBx4"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster16.png">
+		</a></div>
+		<div class="content4">
+			<h6>《클림트 인사이드》</h6>
+			<p> 클림트는 전 세계에서 가장 많이 복제된 그림 <키스>의 화가로 널리 알려져 있지만, 이것은 예술의 새로운 영역을 창조한 전위적인 화가 클림트가 남긴 작품 세계의 한 페이지에 지나지 않습니다. 뛰어난 재능과 열정으로 젊은 시절부터 주목받았던 클림트는 언제나 논쟁의 중심에 있었지만, 정작 자신은 태풍의 눈처럼 고요하게 그림에만 몰두했던 화가입니다. 이번 전시를 통해 그동안 우리가 알지 못했던 클림트의 세계관이 깃든 황금빛 관능을 만나볼 수 있을 것입니다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page17</h1>
+	<div class="boxx4">
+		<div class="imgBx4"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster17.jpg">
+		</a></div>
+		<div class="content4">
+			<h6>《서울 포커스 [행동을 위한 디자인]》</h6>
+			<p> 서울시립 북서울미술관은 도시계획의 대표적 양태인 도시 공공 디자인을 재고하고 점검하는 《2018 서울 포커스: 행동을 위한 디자인》을 개최한다. 대표 도시인 서울의 공간을 구성하고 형성하는 사회 공공 디자인은 개발 중심의 패러다임과 함께 이해관계자들의 욕구들이 충돌되며 과잉과 무절제로 불완전한 도시 공공 디자인을 구성하여 왔다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page18</h1>
+	<div class="boxx5">
+		<div class="imgBx5"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster18.jpg">
+		</a></div>
+		<div class="content5">
+			<h6>《호모 소금 사피엔스》</h6>
+			<p> 소금을 가진 지혜의 인간으로 우리가 추구하는 본질적인 가치를 생각해 보고 인간이 가진 이기적인 양면성의 문제를 통해 과연 인간이 동물보다 나은 모습이 무엇인지 생각해 보도록 이끈다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page20</h1>
+	<div class="boxx5">
+		<div class="imgBx5"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster20.jpg">
+		</a></div>
+		<div class="content5">
+			<h6>《시대유감 時代遺憾》</h6>
+			<p> 2001년 가나아트 이호재 대표로부터 기증받은 작품 200점으로 구성된 ‘가나아트 컬렉션’을 소개하는 두 번째 전시이다. “80년대 시대의 복판을 살아가는 미술인 한 사람에게 주어진 당연한 책무”로서 리얼리즘 계열의 작품을 지원했다는 이호재 대표의 회고처럼, 200점의 작품은 격동의 한국현대사를 몸소 헤쳐 온 46명 작가들의 생생한 시대유감을 드러내고 있다. 이중 160여 점은 민중미술을 적극적으로 추동한 작가들에 의해 제작된 것으로, 한국현대미술사에서 가장 치열하게 시대성을 구현한 미술로 평가 받고 있다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page21</h1>
+	<div class="boxx6">
+		<div class="imgBx6"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster21.jpg">
+		</a></div>
+		<div class="content6">
+			<h6>《ARTIFICIAL NATURE : 콘크리트에 자연을 담다》</h6>
+			<p> 2001년 가나아트 이호재 대표로부터 기증받은 작품 200점으로 구성된 ‘가나아트 컬렉션’을 소개하는 두 번째 전시이다. “80년대 시대의 복판을 살아가는 미술인 한 사람에게 주어진 당연한 책무”로서 리얼리즘 계열의 작품을 지원했다는 이호재 대표의 회고처럼, 200점의 작품은 격동의 한국현대사를 몸소 헤쳐 온 46명 작가들의 생생한 시대유감을 드러내고 있다. 이중 160여 점은 민중미술을 적극적으로 추동한 작가들에 의해 제작된 것으로, 한국현대미술사에서 가장 치열하게 시대성을 구현한 미술로 평가 받고 있다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page23</h1>
+	<div class="boxx6">
+		<div class="imgBx6"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster23.jpg">
+		</a></div>
+		<div class="content6">
+			<h6>《문창배 : 몽돌의 노래》</h6>
+			<p> 제주도가 돌로 만들어졌다는 설문대할망 전설부터, 돌하르방, 저제 전역에서 발견할 수 있는 낮은 돌담길 등이 드러내듯, 돌은 제주인의 삶의 터전 속에 녹아있습니다. 이번 전시에서 문창배는 이렇게 제주도와 가장 밀접한 소재를 다루는 <시간-이미지> 시리즈를 선보입니다.
+  </p>
+		</div>
+	</div>
+</section>
+<section data-animate-scroll='{"x": "-200","y": "0", "alpha": "0", "duration": "2"}'>
+	<h1>page24</h1>
+	<div class="boxx6">
+		<div class="imgBx6"><a href="https://chaeyyyyyyy.github.io/1217/">
+			<img src="poster24.jpg">
+		</a></div>
+		<div class="content6">
+			<h6>《구본주 : 밤이 되어 집으로 돌아온 이 과장의 이야기 – 아빠 왔다》</h6>
+			<p> “21세기를 빛낼 조각계의 떠오르는 별”로 불렸으며, 1990년대 한국 구상조각의 전성기를 이끌어냈으나 불의의 사고로 37세의 나이에 세상을 떠난 비운의 조각가 구본주의 15주기를 추모하기 위해 기획되었습니다.
+  </p>
+		</div>
+	</div>
+</section>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="TweenMax.js"></script>
+<script src="ScrollToPlugin.js"></script>
+<script src="EaselPlugin.js"></script> 
+<script src="animate-scroll.js"></script>
+<script type="text/javascript">
+	  $(document).animateScroll();  
+</script>
+
+<footer>
+      <center>
+         <h6>ⓒ2018 expber All rights reserved<br><br></h6>
+         <hr>
+      </center>
+   </div>
+   <div id="footer2">
+      <center>
+         <h6>PRIVACY POLICY　　　　　　　│　　　　　　　TERMS AND CONDITIONS　　　　　　　│　　　　　　　GET SUBSCRIBED<br><br>
+            이메일 문의　　　│　　　개인정보취급방침　　　│　　　권리 침해 신고　　　│　　　광고　　　│　　　모바일　　　│　　　 앱 설치<br><br><br><br>
+         </h6>
+      </center>
+   </div>   
